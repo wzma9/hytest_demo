@@ -1,4 +1,4 @@
-# hytest自动测试框架功能展示
+# hytest自动测试框架功能
        1.用例存放在cases中
        2. __st__.py中suite_setup,suite_teardown用来进行整个用例目录级的初始化、清除操作
        3.用例文件中suite_setup,suite_teardown用来进行当前用例文件的初始化、清除操作
