@@ -7,7 +7,7 @@
        1 放在__st__文件中，整个目录下用例都获得相同标签
        2 放在 单个用例文件中，当前整个文件中用例都获得相同标签
        3 单个用例（class）用 tags 来添加标签
-       执行方法，hytest --tag tag_name
+         执行方法，hytest --tag tag_name
                   hytest --nottag tag_name （非）
                   hytest --tag "'tag_name1' and 'tag_name2'" （与）
                   hytest --tag tag_name1 tag_name2   (或）
