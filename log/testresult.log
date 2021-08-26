@@ -1,0 +1,157 @@
+
+
+  ========= 测试开始 : 20210825_235004 =========
+
+
+
+>>> cases\
+
+[ suite setup ] cases\
+这是首次初始化,获得初始数据data:1629906604
+
+
+>>> cases\suite0\
+
+[ suite setup ] cases\suite0\
+这是suite0中的初始化,data：1629906605
+
+
+>>> cases\suite0\demo0_0.py
+
+[ suite setup ] cases\suite0\demo0_0.py
+这是demo0_0的初始化
+
+* 演示0  -  2021-08-25 23:50:04
+
+[ case setup ] 演示0
+这是演示0的初始化,data:16299066040
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 第一步 
+
+这是演示0测试步骤中的data:16299066041
+
+** 检查点 **  这是演示0中的断言 ---->  通过
+
+  PASS 
+
+[ case teardown ] 演示0
+这是演示0的清除操作,data:1629906604.1
+
+[ suite teardown ] cases\suite0\demo0_0.py
+这是demo0_0的清除
+
+
+>>> cases\suite0\demo0_1.py
+
+[ suite setup ] cases\suite0\demo0_1.py
+这是demo0_1的初始化
+
+* 演示2  -  2021-08-25 23:50:04
+
+[ case setup ] 演示2
+这是演示2的初始化,data:1629906604.1
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 第一步 
+
+这是演示2测试步骤中的data:1629906605.1
+
+** 检查点 **  这是演示2中的断言 ---->  !! 不通过!!
+
+  FAIL    
+Traceback:
+  File "cases\suite0\demo0_1.py", line 30, in teststeps
+    CHECK_POINT('这是演示2中的断言', data == GSTORE['data'])
+  File "e:\py38\lib\site-packages\hytest\common.py", line 50, in CHECK_POINT
+    raise AssertionError()
+AssertionError
+
+
+[ case teardown ] 演示2
+这是演示2的清除操作,data:1629906604.1
+
+[ suite teardown ] cases\suite0\demo0_1.py
+这是demo0_1的清除
+
+[ suite teardown ] cases\suite0\
+这是suite0中清除,data：1629906603.1
+
+
+>>> cases\suite1\demo1_0.py
+
+[ suite setup ] cases\suite1\demo1_0.py
+这是demo1_0的初始化
+suite setup fail | float division by zero 
+Traceback:
+  File "cases\suite1\demo1_0.py", line 7, in suite_setup
+    data = data / 0
+ZeroDivisionError: float division by zero
+
+
+
+>>> cases\suite1\demo1_1.py
+
+[ suite setup ] cases\suite1\demo1_1.py
+这是demo1_1的初始化
+
+* 演示6  -  2021-08-25 23:50:04
+
+[ case setup ] 演示6
+这是演示6的初始化,data:16299066041.0
+
+  [ case execution steps ]
+
+-- 第 1 步 -- 第一步 
+
+这是演示6测试步骤中的data:1629906605.1
+
+** 检查点 **  这是演示6中的断言 ---->  通过
+
+  PASS 
+
+[ case teardown ] 演示6
+这是演示6的清除操作,data:162990660.41
+
+* 演示7  -  2021-08-25 23:50:04
+
+[ case setup ] 演示7
+case setup fail | float division by zero 
+Traceback:
+  File "cases\suite1\demo1_1.py", line 39, in setup
+    data = GSTORE['data'] / 0
+ZeroDivisionError: float division by zero
+
+
+[ suite teardown ] cases\suite1\demo1_1.py
+这是demo1_1的清除
+
+[ suite teardown ] cases\
+这是最后一次清除
+
+
+  ========= 测试结束 : 20210825_235004 =========
+
+
+  耗时    : 0.109 秒
+
+
+  预备执行用例数量 : 5
+
+  实际执行用例数量 : 4
+
+  通过 : 2
+
+  失败 : 1
+
+  异常 : 0
+
+  套件初始化失败 : 1
+
+  套件清除  失败 : 0
+
+  用例初始化失败 : 1
+
+  用例清除  失败 : 0
