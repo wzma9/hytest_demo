@@ -27,9 +27,10 @@ class case_0(object):
         INFO(f'这是演示0的清除操作,data:{GSTORE["data"]}')
 
     def teststeps(self):
-        STEP(1, '第一步')
+        STEP(1, '这是第一步')
         GSTORE["data"] = GSTORE['data'] + 1
         INFO(f'这是演示0测试步骤中的data:{GSTORE["data"]}')
+        STEP(2, '这是第二步')
         CHECK_POINT('这是演示0中的断言', GSTORE["data"] == GSTORE["data"])
 
 
