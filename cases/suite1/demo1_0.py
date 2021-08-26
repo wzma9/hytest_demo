@@ -2,7 +2,7 @@ from hytest import *
 
 
 def suite_setup():
-    INFO('这是demo1_0的初始化')
+    INFO('用例文件初始化失败演示')
     data = GSTORE['data']
     data = data / 0
 
