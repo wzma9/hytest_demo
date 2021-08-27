@@ -1,7 +1,7 @@
 from hytest import *
 
 
-class test_数据驱动(object):
+class case_数据驱动(object):
 
     tags = ['接口测试']
 
