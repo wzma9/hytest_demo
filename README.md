@@ -14,7 +14,7 @@
  ## name 用例名称
       根据名称选择用例执行
           hytest --test name
- #### INFO('') 将INFO中内容打印在自动生成的报告中
+ #### INFO('string') 将INFO中内容打印在自动生成的报告中
  #### STEP(1,'desc') 步骤说明，会打印在报告中
- #### CHECK_POINT('desc', bool) 断言
+ #### 断言 CHECK_POINT('desc', bool)
 ## 具体学习视频哔哩哔哩搜索白月黑羽
